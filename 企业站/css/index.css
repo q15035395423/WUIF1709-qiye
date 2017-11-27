@@ -1,0 +1,841 @@
+/*
+* @Author: 29016
+* @Date:   2017-11-26 12:43:24
+* @Last Modified by:   29016
+* @Last Modified time: 2017-11-27 01:02:35
+*/
+body,ul,li,h1,h2,h3,h4,h5,h6,p{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+ul,li,input{
+	list-style: none;
+	outline: none;
+}
+img{
+	display: block;
+}
+.top{
+	width: 100%;
+	height: 126px;
+	font-size: 12px;
+	color: #000;
+	font-family: "微软雅黑";
+}
+.neikuan{
+	width: 1200px;
+	height: 126px;
+	margin: 0 auto;
+}
+.top .neikuan img{
+	width: 192px;
+	height: 118px;
+	float: left;
+}
+.top .neikuan ul{
+	width: 1002px;
+	height: 40px;
+	margin: 46px -18px 0 0;
+	float: right;
+}
+.top .neikuan ul li{
+	float: left;
+	width: 100px;
+	height: 40px;
+	margin-left: 11px;
+	position: relative;
+}
+.top .neikuan ul li a{
+	display: block;
+	width: 100px;
+	height: 40px;
+	color: #333;
+	line-height: 26px;
+	text-align: center;
+	font-size: 16px;
+}
+.top .neikuan ul li a:hover{
+	color: #c60108;
+}
+.top .neikuan ul li .kuang{
+	width: 100px;
+	height: auto;
+	border-top: 3px solid #c60108;
+	background-color: rgba(255,255,255,0.7);
+	position: absolute;
+	top: 37px;
+	left: 0;
+	display: none;
+	z-index: 10;
+}
+.top .neikuan ul li:hover .kuang{
+	display: block;
+	bottom: 0;
+}
+.top .neikuan ul li .kuang a{
+	display: block;
+	width: 100px;
+	height: auto;
+	text-align: center;
+	line-height: 40px;
+	font-size: 14px;
+	color: #333;
+}
+.top .neikuan ul li .kuang a:hover{
+	background-color: #ccc;
+	color: #c60108;
+}
+.banner{
+	width: 100%;
+	height: 554px;
+	position: relative;
+}
+.banner img{
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 0;
+}
+.banner ul{
+	width: 102px;
+	height: 14px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	bottom: 20px;
+}
+.banner ul li{
+	width: 10px;
+	height: 10px;
+	float: left;
+	border: 2px solid #fff;
+	border-radius: 50%;
+	margin: 0 10px;
+}
+.banner ul li:hover{
+	background-color: #fff;
+	cursor: pointer;
+}
+.meishi{
+	width: 100%;
+	height: 1358px;
+	padding: 30px 0 60px 0;
+}
+.neikuan1{
+	height: 1358px;
+}
+.jingdian{
+	width: 1200px;
+	height: 124px;
+	margin-bottom: 34px;
+	background-image: url('../img/food_top.jpg');
+	background-size: 31px 9px;
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	text-align: center;
+	line-height: 50px;
+	color: #404040;
+	font-size: 37px;
+	font-weight: bold;
+}
+.neikuan1 .jingdian span{
+	display: block;
+	width: auto;
+	height: auto;
+	text-align: center;
+	line-height: 50px;
+	color: #404040;
+	font-size: 37px;
+	font-weight: bold;
+}
+.tupian{
+	width: 1200px;
+	height: 1200px;
+}
+.tupian .a{
+	width: 600px;
+	height: 600px;
+	float: left;
+}
+.tupian .a .red{
+	width: 300px;
+	height: 229px;
+	padding-top: 70px;
+	background-color: #d8000f;
+	float: left;
+}
+.tupian .a .red .top{
+	width: 100%;
+	height: 110px;
+	background-image: url('../img/xin.jpg');
+	background-size: 40px 35px;
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	font-family: Arial;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.tupian .a .red .top h1{
+	font-size: 24px;
+	line-height: 34px;
+	font-family: "微软雅黑";
+}
+.tupian .a .red .top h1 span{
+	font-size: 14px;
+	margin: 0 8px;
+}
+.tupian .a .red .chakan{
+	width: 92px;
+	height: 24px;
+	line-height: 24px;
+	text-align: center;
+	border: 1px solid #fff;
+	font-size: 15px;
+	margin: 0 auto;
+}
+.tupian .a .red .chakan a{
+	color: #fff;
+}
+.tupian .a .bin{
+	display: block;
+	width: 300px;
+	height: 299px;
+	float: left;
+	overflow: hidden;
+}
+.tupian .a .bin img{
+	width: 300px;
+	height: 299px;
+	transition: all 0.6s;
+}
+.tupian .a .bin:hover img{
+	transform: scale(1.1 ,1.1);
+}
+.tupian .a .bottom{
+	display: block;
+	width: 600px;
+	height: 301px;
+	float: left;
+	overflow: hidden;
+}
+.tupian .a .bottom img{
+	width: 600px;
+	height: 301px;
+	transition: all 0.6s;
+}
+.tupian .a .bottom:hover img{
+	transform: scale(1.1 ,1.1);
+}
+.pinpai{
+	width: 100%;
+	height: 503px;
+	padding: 34px 0 54px 0;
+	background-image: url('../img/brand_bg.jpg');
+	background-repeat: no-repeat;
+	background-size: 1920px 597px;
+	background-position: center top;
+}
+.neikuan2{
+	height: 503px;
+}
+.zi{
+	color: #fff;
+	background-image: url('../img/brand_top.jpg');
+}
+.neikuan2 .zong{
+	width: 1200px;
+	height: 349px;
+}
+.neikuan2 .zong .video{
+	width: 600px;
+	height: 349px;
+	float: left;
+	background-color: pink;
+}
+.neikuan2 .zong .txt{
+	width: 600px;
+	height: 302px;
+	padding-top: 47px;
+	background-color: #fefdf8;
+	float: left;
+	position: relative;
+}
+.neikuan2 .zong .txt .k{
+	width: 470px;
+	height: 222px;
+	margin: 0 65px;
+}
+.neikuan2 .zong .txt .k h2{
+	width: 470px;
+	height: 28px;
+	color: #525252;
+	font-size: 24px;
+	line-height: 28px;
+}
+.neikuan2 .zong .txt .k h3{
+	width: 470px;
+	height: 22px;
+	margin-bottom: 18px;
+	color: #868686;
+	font-size: 18px;
+	line-height: 22px;
+}
+.neikuan2 .zong .txt .k p{
+	width: auto;
+	height: auto;
+	font-size: 14px;
+	color: #818181;
+	font-family: "微软雅黑";
+	line-height: 22px;
+}
+.neikuan2 .zong .txt .cha{
+	width: 158px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	font-size: 16px;
+	background-color: #d8000f;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+.neikuan2 .zong .txt .cha a{
+	color: #fff;
+	line-height: 40px;
+	text-align: center;
+	font-size: 16px;
+}
+.zixun{
+	width: 100%;
+	height: 684px;
+	padding: 28px 0 42px;
+}
+.neikuan3{
+	height: 684px;
+}
+.neikuan3 .dakuang{
+	width: 1200px;
+	height: 440px;
+	border-top: 2px solid #e8e8e8;
+	margin: 0 auto 44px;
+}
+.neikuan3 .dakuang .xinxi{
+	width: 1196px;
+	height: 84px;
+	padding: 32px 2px 30px;
+	border-bottom: 2px solid #e8e8e8;
+	margin-bottom: -2px;
+	background-image: url('../img/youjiantou.jpg');
+	background-size: 17px 32px;
+	background-repeat: no-repeat;
+	background-position: 1114px center;	
+}
+.neikuan3 .dakuang .xinxi .zuo{
+	width: 147px;
+	height: auto;
+	margin-right: 50px;
+	float: left;
+	text-align: right;
+	color: #bdbdbd;
+	font-size: 20px;
+	line-height: 34px;
+}
+.neikuan3 .dakuang .xinxi .zuo h4{
+	font-size: 38px;
+	line-height: 50px;
+	color: #d8000f;
+	background-image: url('../img/yi.jpg');
+	background-size: 58px 2px;
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	font-weight: normal;
+}
+.neikuan3 .dakuang .xinxi .you{
+	width: 860px;
+	height: 36px;
+	float: left;
+	color: #818181;
+	font-size: 14px;
+	line-height: 24px; 
+}
+.neikuan3 .dakuang .xinxi .you h5{
+	color: #525252;
+	font-size: 18px;
+	line-height: 36px;
+}
+.neikuan3 .xiaokuang{
+	width: 185px;
+	height: 40px;
+	border: 1px solid #333;
+	line-height: 40px;
+	text-align: center;
+	font-size: 17px;
+	margin: 0 auto;
+}
+.neikuan3 .xiaokuang a{
+	color: #333;
+}
+.jiameng{
+	width: 100%;
+	height: 299px;
+	background-color: #c60108;
+	text-align: center;
+	color: #fff;
+	font-size: 21px;
+	font-family: Arial;
+	line-height: 30px;
+}
+.jiameng h6{
+	width: 100%;
+	height: 80px;
+	padding-top: 90px;
+	font-size: 53px;
+	font-family: "微软雅黑";
+	font-weight: normal;
+    line-height: 80px;
+	text-align: center;
+	color: #fff;
+}
+.liuyan{
+	width: 100%;
+	height: 608px;
+	padding: 28px 0 42px;
+}
+.neikuan4{
+	height: 608px;
+}
+.neikuan4 .xinxi{
+	width: 1200px;
+	height: 450px;
+}
+.neikuan4 .xinxi .a1{
+	width: 1200px;
+	height: 52px;
+	margin-bottom: 15px;
+	line-height: 52px;
+	color: #565656;
+	font-size: 20px;
+}
+.neikuan4 .xinxi .a1 span{
+	display: block;
+	width: 80px;
+	height: 52px;
+	float: left;
+}
+.neikuan4 .xinxi .a1 span:nth-of-type(2){
+	width: 70px;
+	padding-left: 20px;
+}
+.neikuan4 .xinxi .a1 .name{
+	float: left;
+	width: 600px;
+	height: 50px;
+	padding-left: 8px;
+	line-height: 50px;
+	border: 1px solid #d4d4d4;
+	font-size: 20px;
+	font-family: "微软雅黑";
+}
+.neikuan4 .xinxi .a1 .add{
+	width: 410px;
+}
+.neikuan4 .xinxi .a2{
+	width: 1200px;
+	height: 166px;
+	margin-bottom: 15px;
+	line-height: 52px;
+	font-size: 20px;
+	color: #565656;
+}
+.neikuan4 .xinxi .a2 span{
+	display: block;
+	width: 80px;
+	height: 52px;
+	float: left;
+}
+.neikuan4 .xinxi .a2 .message{
+	width: 1108px;
+	height: 154px;
+	padding: 5px;
+	border: 1px solid #d4d4d4;
+	float: left;
+	line-height: 22px;
+	font-size: 20px;
+	font-family: "微软雅黑"; 
+}
+.neikuan4 .xinxi .a3{
+	width: 1200px;
+	height: 52px;
+	margin-bottom: 15px;
+	line-height: 52px;
+    color: #565656;
+    font-size: 20px;
+}
+.neikuan4 .xinxi .a3 span{
+	display: block;
+	width: 80px;
+	height: 52px;
+	float: left;
+}
+.neikuan4 .xinxi .a3 .yzm{
+	width: 288px;
+	height: 40px;
+	padding: 5px;
+	border: 1px solid #d4d4d4;
+	margin-right: 18px;
+	line-height: 40px;
+    text-align: center;
+    font-size: 20px;
+    font-family: "微软雅黑";
+    float: left;
+}
+.neikuan4 .xinxi .a3 .yzt{
+	display: block;
+	float: left;
+	width: 151px;
+	height: 52px;
+	border: 1px solid #d4d4d4;
+	border: none;
+}
+.neikuan4 .xinxi .a3 .yzt img{
+	width: 151px;
+	height: 52px;
+}
+.neikuan4 .xinxi .tijiao{
+	width: 1200px;
+	height: 42px;
+	padding-top: 26px;
+	text-align: center;
+}
+.neikuan4 .xinxi .tijiao .btn{
+	width: 187px;
+	height: 42px;
+	background-color: #c7000a;
+	color: #fff;
+	font-size: 17px;
+	font-family: "微软雅黑";
+	margin: 0 40px;
+	border: none;
+}
+.neikuan4 .xinxi .tijiao .btn1{
+	background-color: #b9b9b9;
+}
+.foot{
+	width: 100%;
+	height: 164px;
+	padding: 70px 0 42px 0;
+	background-color: #2e2d29;
+}
+.neikuan5{
+	height: 164px;
+}
+.neikuan5 .box{
+	width: 730px;
+	height: 131px;
+	padding-left: 90px;
+	float: left;
+}
+.neikuan5 .box .box1{
+	width: 198px;
+	height: auto;
+	float: left;
+}
+.neikuan5 .box .box1 p{
+	width: 198px;
+	height: 34px;
+	margin-bottom: 20px;
+	line-height: 34px;
+    color: #fff;
+    font-size: 18px;
+    font-family: "黑体";
+}
+.neikuan5 .box .box1 a{
+	display: block;
+	width: 60px;
+	height: 26px;
+	color: #737373;
+	line-height: 26px;
+	font-size: 15px;
+}
+.neikuan5 .box .box2{
+	width: 220px;
+	height: 126px;
+}
+.neikuan5 .box .box2 img{
+	width: 220px;
+	height: 42px;
+	margin-bottom: 4px;
+}
+.neikuan5 .box .box2 span{
+	display: block;
+	width: 220px;
+	height: 26px;
+	line-height: 26px;
+    font-size: 15px;
+    color: #737373;
+}
+.neikuan5 .ewm{
+	width: 304px;
+	height: 164px;
+	padding-right: 10px;
+	float: right;
+}
+.neikuan5 .ewm .le{
+	width: 152px;
+	height: 164px;
+	float: left;
+	text-align: center;
+	line-height: 40px;
+	color: #737373;
+	font-size: 14px;
+	font-family: "黑体";
+}
+.neikuan5 .ewm .le img{
+	width: 124px;
+	height: 124px;
+	margin: 0 auto;
+}
+.foot1{
+	width: 100%;
+	height: 48px;
+	border-top: 1px solid #343330;
+	text-align: center;
+	line-height: 48px;
+    background-color: #3c3c3a;
+    font-size: 14px;
+    color: #737373;
+}
+.foot1 .neikuan6{
+	height: 48px;
+}
+          /* 移动店车开始 */
+.dianche{
+	width: 100%;
+	height: 74px;
+	padding-top: 30px;
+	border-bottom: 1px solid #ccc;
+	margin-bottom: 40px;
+}
+.neikuan{
+	width: 1200px;
+	height: 100%;
+	margin: 0 auto;
+} 
+.neikuan .left{
+	width: 468px;
+	height: 74px;
+	float: left;
+	line-height: 50px;
+	background-image: url('../img/gun.jpg');
+	background-repeat: no-repeat;
+	background-size: 127px 5px;
+	background-position: 2px bottom;
+	color: #404040;
+	font-size: 34px;
+	font-weight: bold;
+}
+.neikuan .left span{
+	display: block;
+	width: auto;
+	height: auto;
+	float: right;
+}
+.neikuan .right{
+	width: 283px;
+	height: 24px;
+	margin-top: 16px;
+	float: right;
+	font-size: 15px;
+	line-height: 24px;
+	color: #333;
+}
+.neikuan .right img{
+	width: 22px;
+	height: 20px;
+	float: left;
+	margin-right: 11px;
+}
+.neikuan .right a{
+	color: #333;
+}
+.neikuan .right span{
+	color: #727272;
+	font-size: 15px;
+	line-height: 24px;
+}
+.neikuan .right span:nth-of-type(2){
+	color: #c7000a;
+}
+.youshi{
+	width: 1200px;
+	height: 63px;
+	margin: 0 auto;
+	margin-bottom: 20px;	
+}
+.dian{
+	width: 390px;
+	height: 42px;
+	margin: 0 auto;
+}
+.youshi a{
+	display: block;
+	float: left;
+	width: 140px;
+	height: 42px;
+	margin: 0 14px 20px;
+	text-align: center;
+	line-height: 42px;
+	background-color: #c7000a;
+	color: #fff;
+	border-radius: 5px;
+	font-size: 17px;
+}
+.youshi a:nth-of-type(2){
+	background-color: #404040;
+	float: right;
+}
+.youshi a:nth-of-type(2):hover{
+	background-color: #c7000a;
+}
+.tp{
+	width: 1185px;
+	height: 1279px;
+	padding: 15px 0 15px 15px;
+	margin: 0 auto;
+	margin-bottom: 40px;
+}
+.tp img{
+	width: 1100px;
+	height: 741px;
+	margin: 0 auto;
+}
+.tp span{
+	display: block;
+	width: auto;
+	height: auto;
+	line-height: 2;
+    font-size: 16px;
+	font-weight: bold;
+	color: #000;
+	margin-left: 30px;
+}
+.tp p{
+	width: auto;
+	height: auto;
+	font-size: 16px;
+	line-height: 2;
+	color: #000;
+}
+/* 加盟咨询开始 */
+.dian1{
+	width: 605px;
+	display: flex;
+	justify-content: space-between; 
+}
+.tj{
+	width: 1185px;
+	height: 826px;
+	padding: 15px 0 15px 15px;
+	margin: 0 auto;
+	margin-bottom: 40px;
+}
+.tj span{
+	display: block;
+	width: auto;
+	height: auto;
+	line-height: 2;
+	font-size: 18px;
+	color: #000;
+	text-align: center;
+	font-weight: bold;
+}
+.tj img{
+	width: 700px;
+	height: 338px;
+	margin: 0 auto;
+	margin-top: 58px;
+	margin-bottom: 32px;
+}
+.tj img:nth-of-type(2){
+	width: 700px;
+	height: 203px;
+	margin: 0 auto;
+}
+     /* 品牌溯源开始 */
+.dianche .neikuan .left1{
+	width: 528px;
+}
+.dian2{
+	width: 140px;
+	height: 42px;
+	margin: 0 auto;
+}
+.dl{
+	width: 1185px;
+	height: 591px;
+	padding: 15px 0 15px 15px;
+	margin: 0 auto;
+	margin-bottom: 40px;
+}
+/* 经典美食开始 */
+.dianj{
+	width: 1035px;
+	display: flex;
+	justify-content: space-between;
+}
+.dianj a{
+	background: #404040;
+}
+.dianj a:hover{
+	background-color: #c7000a; 
+}
+.lb{
+	width: 1056px;
+	height: 873px;
+	margin: 0 auto;
+	font-family: "微软雅黑";
+    color: #000;
+    font-size: 12px;
+    line-height: 22px;
+}
+.lb .hz{
+	width: 330px;
+	height: 395px;
+	margin: 0 11px 22px 11px;
+	float: left;
+	position: relative;
+}
+.lb .hz img{
+	width: 330px;
+	height: 330px;
+}
+.lb .hz .xa{
+	width: 330px;
+	height: 78px;
+	text-align: center;
+    font-size: 18px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.lb .hz .xa a{
+	display: block;
+    height: 65px;
+    line-height: 65px;
+    margin-top: 13px;
+    color: #333;
+    background: #f8f8f8;
+}
+.lb .hz:hover a{
+	background-color: #c7000a;
+	color: #fff;
+}
